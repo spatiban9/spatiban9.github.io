@@ -42,7 +42,7 @@ header {
 
 .navbar-nav .nav-link:hover {
   background-color: rgba(255, 255, 255, 0.15);
-  color: #ffd700 !important;
+  color: #ffffff !important;
 }
 
 .navbar-hide {
@@ -121,6 +121,23 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+form button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  width: fit-content;
+  align-self: center;
+  min-width: 120px;
+}
+
+form .button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 input,
@@ -146,6 +163,57 @@ button {
 
 button:hover {
   background-color: #003f80;
+}
+
+/* Back to Top Button */
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  background-color: #0055aa;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+}
+#backToTop:hover {
+  background-color: #003f80;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 4rem;
+}
+.footer .social-links a {
+  margin: 0 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.footer .social-links a:hover {
+  text-decoration: underline;
+}
+
+/* Floating Name Badge */
+#floatingName {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: #003366;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  display: none;
+  z-index: 1000;
 }
 
 @media (max-width: 820px) {
