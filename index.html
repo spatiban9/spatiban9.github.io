@@ -5,17 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Santhosh Naidu Patibandla - Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js" defer></script>
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#previous-work">Previous Work</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-semibold" href="#"
+            >Santhosh Naidu Patibandla</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav gap-3">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#previous-work"
+                  >Previous Work</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
@@ -23,7 +59,7 @@
         <h2>About Me</h2>
         <img
           src="images/myphoto.jpg"
-          alt="Santhosh Patibandla"
+          alt="Santhosh Naidu Patibandla"
           width="200"
           height="200"
         />
@@ -39,48 +75,77 @@
       </section>
       <section id="previous-work">
         <h2>Previous Work</h2>
-        <ul>
-          <li>
-            <strong>Event Organizer - Venture Discover (2023)</strong><br />
-            Organized and managed technical events, coordinated student teams,
-            and ensured smooth execution.
-          </li>
-          <li>
-            <strong>Campus Fest Volunteer - GITAM University (2022)</strong
-            ><br />
-            Assisted in event setup, crowd management, and guiding participants
-            during large university events.
-          </li>
-          <li>
-            <strong>Data Science Intern - Oasis Infobyte (2023)</strong><br />
-            Worked on small-scale machine learning tasks, gained hands-on
-            experience with Python libraries like Pandas and NumPy.
-          </li>
-        </ul>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Event Organizer - Venture Discover</h3>
+            <p>
+              Managed technical events, student teams, and event coordination.
+            </p>
+            <button
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#modalVenture"
+            >
+              More Details
+            </button>
+          </div>
+          <div class="card">
+            <h3>Campus Fest Volunteer - GITAM</h3>
+            <p>Handled setup, crowd support, and event assistance.</p>
+            <button
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#modalVolunteer"
+            >
+              More Details
+            </button>
+          </div>
+          <div class="card">
+            <h3>Data Science Intern - Oasis Infobyte</h3>
+            <p>
+              Worked on ML tasks using Python and data libraries like Pandas.
+            </p>
+            <button
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#modalIntern"
+            >
+              More Details
+            </button>
+          </div>
+        </div>
       </section>
       <section id="projects">
         <h2>Projects</h2>
-        <article>
-          <h3>WeatherWise - Smart Weather Activity Planner</h3>
-          <p>
-            A web-based weather planner that fetches API data, analyzes it, and
-            suggests activities. Built using Python, Streamlit, and Pandas as
-            part of my master's project.
-          </p>
-          <a
-            href="https://github.com/Monika8899/WeatherWise/tree/main"
-            target="_blank"
-            >View GitHub Repository</a
-          >
-        </article>
-        <article>
-          <h3>Facial Emotion Detection</h3>
-          <p>
-            Developed as my B.Tech project using OpenCV and deep learning with
-            Flask to detect and classify emotions from webcam images. Frontend
-            built with HTML and CSS.
-          </p>
-        </article>
+        <div class="card-grid">
+          <div class="card">
+            <h3>WeatherWise</h3>
+            <p>
+              Smart weather planner that fetches data and suggests activities.
+            </p>
+            <button
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#modalWeatherWise"
+            >
+              More Details
+            </button>
+          </div>
+          <div class="card">
+            <h3>Facial Emotion Detection</h3>
+            <p>
+              Emotion recognition app using OpenCV, Flask, and deep learning
+              models.
+            </p>
+            <button
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#modalEmotion"
+            >
+              More Details
+            </button>
+          </div>
+        </div>
       </section>
       <section id="contact">
         <h2>Contact</h2>
@@ -96,5 +161,102 @@
         </form>
       </section>
     </main>
+    <div class="modal fade" id="modalVenture" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Event Organizer - Venture Discover</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Coordinated technical events, managed student teams, built
+            schedules, and ensured successful execution of university-wide
+            programs.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalVolunteer" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Campus Fest Volunteer - GITAM</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Assisted in event logistics, managed crowd control, and supported
+            event staff to ensure smooth operation during major campus fests.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalIntern" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Data Science Intern - Oasis Infobyte</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Worked with Python, Pandas, and NumPy on mini-projects including
+            sentiment analysis, data visualization, and ML model training.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalWeatherWise" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">WeatherWise Project</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Web app that fetches real-time weather data and suggests outdoor or
+            indoor activities. Built using Python, Streamlit, and Pandas.
+            <br /><br />
+            <a
+              href="https://github.com/Monika8899/WeatherWise/tree/main"
+              target="_blank"
+              >View GitHub Repository</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalEmotion" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Facial Emotion Detection Project</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Flask-based web interface to detect and classify facial expressions
+            from webcam using OpenCV and a CNN model trained with Keras.
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
