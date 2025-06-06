@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santhosh Naidu Patibandla - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#previous-work">Previous Work</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <img
+          src="images/myphoto.jpg"
+          alt="Santhosh Patibandla"
+          width="200"
+          height="200"
+        />
+        <p>
+          I am Santhosh Naidu Patibandla. I recently completed my Bachelors in
+          Computer Science in India. For better exposure and learning
+          opportunities, I decided to pursue my Masters in Computer Science in
+          the United States. After doing some research, I decided to join
+          Portland State University for doing graduate studies, and now I feel
+          like I took a wonderful decision as it is an amazing place to learn
+          and grow.
+        </p>
+      </section>
+      <section id="previous-work">
+        <h2>Previous Work</h2>
+        <ul>
+          <li>
+            <strong>Event Organizer - Venture Discover (2023)</strong><br />
+            Organized and managed technical events, coordinated student teams,
+            and ensured smooth execution.
+          </li>
+          <li>
+            <strong>Campus Fest Volunteer - GITAM University (2022)</strong
+            ><br />
+            Assisted in event setup, crowd management, and guiding participants
+            during large university events.
+          </li>
+          <li>
+            <strong>Data Science Intern - Oasis Infobyte (2023)</strong><br />
+            Worked on small-scale machine learning tasks, gained hands-on
+            experience with Python libraries like Pandas and NumPy.
+          </li>
+        </ul>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <article>
+          <h3>WeatherWise - Smart Weather Activity Planner</h3>
+          <p>
+            A web-based weather planner that fetches API data, analyzes it, and
+            suggests activities. Built using Python, Streamlit, and Pandas as
+            part of my master's project.
+          </p>
+          <a
+            href="https://github.com/Monika8899/WeatherWise/tree/main"
+            target="_blank"
+            >View GitHub Repository</a
+          >
+        </article>
+        <article>
+          <h3>Facial Emotion Detection</h3>
+          <p>
+            Developed as my B.Tech project using OpenCV and deep learning with
+            Flask to detect and classify emotions from webcam images. Frontend
+            built with HTML and CSS.
+          </p>
+        </article>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <form id="contactForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+          <label for="message">Message:</label>
+          <textarea id="message" required></textarea>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
