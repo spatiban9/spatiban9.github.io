@@ -38,7 +38,7 @@ c. Open index.html in a browser to run the code.
 
 Bootstrap v5.3, is used for layout, modals, and responsive design of the website.
 
-W3C HTML Validator and WAVE Accessibility Tool are used to make sure HTML and CSS are symantically correct, and to test and improve accessibility.
+W3C HTML Validator and WAVE Accessibility Tool are used to make sure HTML and CSS are semantically correct, and to test and improve accessibility.
 
 ## Deployed site link
 
